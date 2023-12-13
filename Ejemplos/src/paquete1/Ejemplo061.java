@@ -22,23 +22,28 @@ public class Ejemplo061 {
         String dato;
         // arreglo de tipo entero
         String[] arreglo1 = new String[5]; //  se guardaran nombres de personas
-        
+
         // Se asigna valores al arreglo, pidiendo valores por teclado
         // se usa un ciclo repetitivo
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.println("Ingrese un valor para el arreglo");
             dato = entrada.nextLine();
+            if (dato>5 && dato<9||dato == 11||dato == 15||dato == 14){
+            
+               
+            }else {
             // se asigna la variable dato a la posición del arreglo
             // de acuerdo al valor de i
-            arreglo1[i] = dato;
+            arreglo1[i] = 5;
         }
-        
+        }
+
         // Se hace uso del ciclo repetitivo for para recorrer el arreglo
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.printf("Subíndice o Índice %d, con valor %s\n",
                     i, arreglo1[i]);
         }
-        
+
     }
 
 }
