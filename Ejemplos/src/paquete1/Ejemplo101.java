@@ -11,38 +11,36 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo09 {
+public class Ejemplo101 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // Declarar y generar arreglos en Java
-        
+
         // Se declara un arreglo de tipo double, llamado promedios
-        double[] promedios =  {8.1, 9, 9.5, 10, 9.9};
+        double[] promedios = {8.1, 9, 9.5, 10, 9.9};
         String[] estudiantes = {"Luis", "Ana", "Mónica", "José", "Juan"};
-        
         String mensajeFinal = ""; // variable que acumula un reporte final
         // Se hace uso del ciclo repetitivo for para recorrer los arreglos
         // y presentar los valore de las posiciones
-        
-        for (int i = 0; i < promedios.length; i++) { // me da el numero elementos del arreglo
-            mensajeFinal = String.format("%sEstudiante:%s - promedio: %.4f\n", 
-                    mensajeFinal,
-                    estudiantes[i].toUpperCase(),
-                    promedios[i]);
+
+        for (int i = 0; i < promedios.length; i++) { // estudiantes.length 
+            double nota = promedios[1];
+
+            if (nota > 8.1) {
+
+                mensajeFinal = String.format("%sEstudiante:%s - promedio: "
+                        + "%.4f\n",
+                        mensajeFinal,
+                        estudiantes[i],
+                        promedios[i]);
+            }
         }
-        
+
         System.out.printf("%s\n", mensajeFinal);
-        /*
-        
-        Estudiante:LUIS - promedio: 8,1000
-        Estudiante:ANA - promedio: 9,0000   
-        Estudiante:MÓNICA - promedio: 9,5000
-        Estudiante:JOSÉ - promedio: 10,0000
-        Estudiante:JUAN - promedio: 9,9000
-        */
+
     }
 
 }

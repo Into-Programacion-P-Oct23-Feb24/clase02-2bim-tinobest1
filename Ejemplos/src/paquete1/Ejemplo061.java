@@ -28,14 +28,13 @@ public class Ejemplo061 {
         for (int i = 0; i < arreglo1.length; i++) {
             System.out.println("Ingrese un valor para el arreglo");
             dato = entrada.nextLine();
-            if (dato>5 && dato<9||dato == 11||dato == 15||dato == 14){
-            
-               
-            }else {
-            // se asigna la variable dato a la posición del arreglo
-            // de acuerdo al valor de i
-            arreglo1[i] = 5;
-        }
+            if (dato > 5 && dato < 9 || dato == 11 || dato == 15 || dato == 14) {
+
+            } else {
+                // se asigna la variable dato a la posición del arreglo
+                // de acuerdo al valor de i
+                arreglo1[i] = 5;
+            }
         }
 
         // Se hace uso del ciclo repetitivo for para recorrer el arreglo

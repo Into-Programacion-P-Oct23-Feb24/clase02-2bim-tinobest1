@@ -30,6 +30,10 @@ public class Ejemplo10 {
             // Se agrega los valores al reporte siempe y cuando
             // el valor de la posición del arreglo promedios
             // sea mayor o igual a 9.5
+            //promedio[0]
+            //8.1 > 9.1
+            //promedios[1]
+            //9 > 8.1
             if (promedios[i]>8.1) {
             
                 mensajeFinal = String.format("%sEstudiante:%s - promedio: "
